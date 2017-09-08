@@ -1,0 +1,23 @@
+See the DockerHub site for more info:  
+
+    https://hub.docker.com/r/lachele/openconnect-ssh-iceweasel/
+
+
+Normal use:
+
+    git pull https://github.com/Lachele/openconnect-ssh-iceweasel
+    docker pull lachele/openconnect-ssh-iceweasel
+
+    Terminal 1%  bash start_vpn.bash your.vpn.url   # open the VPN
+    Terminal 2%  bash connect_command.bash          # get a terminal
+    Terminal 3%  bash iceweasel_connect.bash        # start firefox
+
+
+Files:
+
+    build-command.bash        # command used to build the image
+    connect_command.bash      # after starting container, start terminal
+    Dockerfile                # Dockerfile for image
+    iceweasel_connect.bash    # after starting container, start iceweasel
+    run_no_vpn.bash           # start the container without openconnect
+    start_vpn.bash            # start the container with openconnect
